@@ -19,12 +19,12 @@ export default function LoginButton() {
   } else {
     return (
       <>
-        <p>Not signed in</p>
+        <p>Not signed in.</p>
         <button
-          onClick={() => signIn()}
+          onClick={() => signIn("google", { callbackUrl: "/" })}
           className="bg-gray-400 px-4 py-2 rounded-lg"
         >
-          Sign in
+          Sign in to Google
         </button>
       </>
     );
